@@ -1,0 +1,102 @@
+{% load static %}
+{% include 'base.html' %}
+<section class="department_section layout_padding">
+  <div class="container">
+    <div class="heading_container heading_center mb-5">
+      <h2>Our Departments</h2>
+      <p>
+        Specialized departments with top-tier experts providing quality healthcare.
+      </p>
+    </div>
+
+    <div class="row justify-content-center g-4">
+      <!-- Department Card 1 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="box h-100 shadow-sm p-3 rounded-3">
+          <div class="img-box text-center mb-3">
+            <img src="{% static 'images/s1.png' %}" alt="Cardiology" class="img-fluid" style="max-height: 130px;">
+          </div>
+          <div class="detail-box">
+            <h5>Cardiology</h5>
+            <p>Experienced surgeons in beating heart & bloodless surgeries.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Department Card 2 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="box h-100 shadow-sm p-3 rounded-3">
+          <div class="img-box text-center mb-3">
+            <img src="{% static 'images/s2.png' %}" alt="Diagnosis" class="img-fluid" style="max-height: 130px;">
+          </div>
+          <div class="detail-box">
+            <h5>Diagnosis</h5>
+            <p>Advanced diagnostic services with rapid results.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Department Card 3 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="box h-100 shadow-sm p-3 rounded-3">
+          <div class="img-box text-center mb-3">
+            <img src="{% static 'images/s3.png' %}" alt="Anaesthesiology" class="img-fluid" style="max-height: 130px;">
+          </div>
+          <div class="detail-box">
+            <h5>Anaesthesiology</h5>
+            <p>Specialized care before, during and after surgery.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Department Card 4 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="box h-100 shadow-sm p-3 rounded-3">
+          <div class="img-box text-center mb-3">
+            <img src="{% static 'images/s4.png' %}" alt="First Aid" class="img-fluid" style="max-height: 130px;">
+          </div>
+          <div class="detail-box">
+            <h5>First Aid</h5>
+            <p>Emergency care for quick stabilization and triage.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Department Card 5 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="box h-100 shadow-sm p-3 rounded-3">
+          <div class="img-box text-center mb-3">
+            <img src="{% static 'images/s5.png' %}" alt="Neurology" class="img-fluid" style="max-height: 130px;">
+          </div>
+          <div class="detail-box">
+            <h5>Neurology</h5>
+            <p>Comprehensive care for brain and nervous system disorders.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Department Card 6 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="box h-100 shadow-sm p-3 rounded-3">
+          <div class="img-box text-center mb-3">
+            <img src="{% static 'images/s6.png' %}" alt="Orthopaedics" class="img-fluid" style="max-height: 130px;">
+          </div>
+          <div class="detail-box">
+            <h5>Orthopaedics</h5>
+            <p>Treatment of bones, joints, ligaments, and muscles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- View All Button -->
+    <div class="text-center mt-5">
+      <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">View All Departments</a>
+    </div>
+  </div>
+</section>
+
+ <!-- Footer -->
+  {% include 'footer.html' %}
+</body>
+</html>
