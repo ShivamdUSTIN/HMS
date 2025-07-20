@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    'whitenoise.runserver_nostatic',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'hospital',
@@ -42,6 +43,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'hospital_mgnt.urls'
@@ -86,7 +88,7 @@ DATABASES = {
         'NAME': 'my_hms_db',
         'USER': 'mysuperuser',  # The user you created
         'PASSWORD': 'Qwerty#19122001',  # The password you set
-        'HOST': 'mydjangoproject29.c74uugy8yzi0.ap-south-1.rds.amazonaws.com',
+        'HOST': 'my-hms-db.c74uugy8yzi0.ap-south-1.rds.amazonaws.com',
         'PORT': '5432',
         'OPTIONS': {
             'sslmode': 'require',
