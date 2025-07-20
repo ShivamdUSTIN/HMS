@@ -84,10 +84,13 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'my_hms_db',
-        'USER': 'hms_user',  # The user you created
-        'PASSWORD': 'securepassword123',  # The password you set
+        'USER': 'mysuperuser',  # The user you created
+        'PASSWORD': 'Qwerty#19122001',  # The password you set
         'HOST': 'mydjangoproject29.c74uugy8yzi0.ap-south-1.rds.amazonaws.com',
         'PORT': '5432',
+        'OPTIONS': {
+            'sslmode': 'require',
+        },
     }
 }
 # DATABASES = {
